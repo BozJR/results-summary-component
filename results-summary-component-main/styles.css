@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* primary colours */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    /* background colours */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /* circle colours */
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+
+    /* neutral colours */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /* font weights */
+    --fw-reg: 500;
+    --fw-bold: 700;
+    --fw-bolder: 800; 
+}
+
+body {
+    font-size: 18px;
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+.results__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--Light-slate-blue);
+    color: var(--White);
+    border-radius: 0 0 2rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.results__title {
+    color: var(--Light-lavender);
+    margin: 1rem;
+    font-weight: var(--fw-bold);
+}
+
+.results__score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(78, 33, 202, 0.274);
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.results__score h1 {
+    font-size: 45px;
+    font-family: inherit
+}
+
+.results__score p {
+    color: var(--Light-lavender);
+    font-size: 14px;
+    padding: 0.4;
+}
+
+.results__summary {
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: var(--Light-lavender);
+}
+
+.results__summary h3 {
+    margin-bottom: 1rem;
+    color: var(--White);
+}
+
+.summary__container {
+    padding: 0rem 1.5rem;
+    font-weight: var(--fw-bold);
+}
+
+.summary__container h4 {
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.summary__reaction {
+    padding: 1rem;
+    color: var(--Light-red);
+    background-color: rgba(255, 87, 87, 0.265);
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.summary__memory {
+    padding: 1rem;
+    color: var(--Orangey-yellow);
+    background-color: rgba(255, 177, 31, 0.188);
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.summary__verbal {
+    padding: 1rem;
+    color: var(--Green-teal);
+    background-color: hsla(166, 100%, 37%, 0.246);
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.summary__visual {
+    padding: 1rem;
+    color: var(--Cobalt-blue);
+    background-color: hsla(234, 85%, 45%, 0.132);
+    border-radius: 0.5rem;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.summary__reaction img,
+.summary__memory img,
+.summary__verbal img, 
+.summary__visual img {
+    padding-right: 1rem;
+}
+
+.summary__reaction span, 
+.summary__memory span, 
+.summary__verbal span, 
+.summary__visual span {
+    margin-left: auto;
+    color: black;
+}
+
+span.ttt { 
+    color: rgb(160, 155, 155);
+}
+
+.continue__btn {
+    border-radius: 2rem;
+    background-color: rgba(7, 7, 61, 0.835);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.continue__btn:hover {
+    cursor: pointer;
+    background-color: rgba(78, 33, 202, 0.274);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1024px) {  
+    .container {
+        display: flex;
+        justify-content: center;
+        border-radius: 2rem;
+        padding: 1rem;
+        width: 700px;
+        height: 500px;
+        margin: 20rem auto;
+        box-shadow: 20px 20px rgba(199, 197, 197, 0.043);
+    }
+
+    .results__container {
+        border-radius: 2rem;
+        width: 100%;  
+        height: 100%;  
+        padding: 1.5rem 1rem;
+    }
+
+    .summary__container {
+        width: 100%;
+        height: 100%;
+        border-radius: 0 2rem 2rem 0;
+        padding: 1rem 1.5rem;
+    }
+
+    .results__score {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: rgba(78, 33, 202, 0.274);
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+
+    .results__score h1 {
+        font-size: 70px;
+    }
+    
+}
