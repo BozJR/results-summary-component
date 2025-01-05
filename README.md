@@ -1,6 +1,6 @@
 # Frontend Mentor - Results summary component solution
 
-This is My solution to the [Results summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is My solution to creating a basic Results summary component (no data added, all data is fictional). 
 
 
 ## Table of contents
@@ -46,5 +46,5 @@ Just need to keep practising before i can confidently progress to JS! getting th
 
 ## Author
 
-- Frontend Mentor - [@BozJR](https://www.frontendmentor.io/profile/BozJR)
+- GitHub Profile - https://github.com/BozJR?tab=repositories
 
