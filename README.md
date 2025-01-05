@@ -1,4 +1,4 @@
-# Frontend Mentor - Results summary component solution
+# Results summary component
 
 This is My solution to creating a basic Results summary component (no data added, all data is fictional). 
 
